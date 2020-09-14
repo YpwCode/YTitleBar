@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tbar_bg">#00000000</color>
+    <dimen name="tbar_size">@dimen/sw_44</dimen>
+    <color name="tbar_text_color">#000000</color>
+    <dimen name="tbar_text_size">18sp</dimen>
+</resources>

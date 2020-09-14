@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- *********************** -->
+        <!-- 背景透明-用于显示在图片之上 -->
+        <!-- *********************** -->
+        <com.ypw.code.view.title.YTitleBar
+            android:id="@+id/tbar_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tbar_bg="#00000000"
+            app:tbar_centerColor="@color/white"
+            app:tbar_centerStr="背景透明" />
+
+        <!-- *********************** -->
+        <!-- 通过属性引入外部 layout 替换 left，也可以替换 center or right -->
+        <!-- *********************** -->
+        <com.ypw.code.view.title.YTitleBar
+            android:id="@+id/tbar_left_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tbar_bg="@color/white"
+            app:tbar_centerColor="@color/colorPrimaryDark"
+            app:tbar_centerStr="属性替换"
+            app:tbar_left="@layout/layout_titlebar_left" />
+
+        <!-- *********************** -->
+        <!-- 通过 id 替换 right 也可以替换 center or left -->
+        <!-- *********************** -->
+        <com.ypw.code.view.title.YTitleBar
+            android:id="@+id/tbar_right_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tbar_bg="@color/colorPrimary"
+            app:tbar_centerColor="@color/white"
+            app:tbar_centerStr="内部替换"
+            app:tbar_rightShow="true">
+
+            <ImageView
+                android:id="@id/tbar_right_id"
+                android:layout_width="@dimen/sw_30"
+                android:layout_height="@dimen/sw_30"
+                android:layout_marginEnd="@dimen/sw_15"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_default" />
+
+        </com.ypw.code.view.title.YTitleBar>
+
+    </LinearLayout>
+
+</FrameLayout>

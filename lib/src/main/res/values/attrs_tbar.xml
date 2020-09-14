@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tbar_left_id" type="id" />
+    <item name="tbar_center_id" type="id" />
+    <item name="tbar_right_id" type="id" />
+    <declare-styleable name="YTitleBar">
+        <attr name="tbar_bg" format="color" />
+        <attr name="tbar_left" format="reference" />
+        <attr name="tbar_center" format="reference" />
+        <attr name="tbar_right" format="reference" />
+        <attr name="tbar_leftShow" format="boolean" />
+        <attr name="tbar_centerShow" format="boolean" />
+        <attr name="tbar_rightShow" format="boolean" />
+        <attr name="tbar_leftColor" format="color" />
+        <attr name="tbar_centerColor" format="color" />
+        <attr name="tbar_centerSize" format="dimension" />
+        <attr name="tbar_rightColor" format="color" />
+        <attr name="tbar_rightSize" format="dimension" />
+        <attr name="tbar_centerStr" format="string" />
+        <attr name="tbar_rightStr" format="string" />
+    </declare-styleable>
+</resources>
