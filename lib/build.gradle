@@ -28,7 +28,7 @@ dependencies {
 // maven库配置
 ext {
     GROUP_ID = "com.ypw.code"
-    ARTIFACT_ID = "sidebar"
+    ARTIFACT_ID = "titlebar"
     VERSION = "1.0.0"
 }
-apply from: "$rootDir/gradleconfigs/pack-upload.gradle"
+apply from: "$rootDir/GradleConfigs/pack-upload.gradle"
