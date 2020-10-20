@@ -19,8 +19,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation depLibs.kotlin
-    implementation depAndroidxLibs.appcompat
-    implementation depAndroidxLibs.constraintlayout
     implementation depMyLibs.lib_dimen
     implementation depMyLibs.lib_utils
 }
@@ -29,6 +27,7 @@ dependencies {
 ext {
     GROUP_ID = "com.ypw.code"
     ARTIFACT_ID = "titlebar"
-    VERSION = "1.0.0"
+    VERSION = "1.0.1"
 }
 apply from: "$rootDir/GradleConfigs/pack-upload.gradle"
+apply from: "$rootDir/GradleConfigs/pack-upload-ali.gradle"

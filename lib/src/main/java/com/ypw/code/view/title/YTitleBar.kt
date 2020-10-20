@@ -34,7 +34,6 @@ class YTitleBar constructor(context: Context, attrs: AttributeSet? = null) : Vie
     private var mCenterY = 0
 
     private var mBgColor = Color.WHITE
-
     private var mLeftColor = Color.RED
 
     private var mCenterColor = Color.BLACK
@@ -43,16 +42,16 @@ class YTitleBar constructor(context: Context, attrs: AttributeSet? = null) : Vie
     private var mRightColor = Color.BLACK
     private var mRightSize = R.dimen.sw_16.getDimen(context)
 
-    var mLeftView: View? = null
-    var mCenterView: View? = null
-    var mRightView: View? = null
+    private var mLeftView: View? = null
+    private var mCenterView: View? = null
+    private var mRightView: View? = null
 
-    var mLeftShow = true
-    var mCenterShow = true
-    var mRightShow = false
+    private var mLeftShow = true
+    private var mCenterShow = true
+    private var mRightShow = false
 
-    var mCenterStr = ""
-    var mRightStr = ""
+    private var mCenterStr = ""
+    private var mRightStr = ""
 
     override fun generateLayoutParams(attrs: AttributeSet?): LayoutParams {
         return MarginLayoutParams(context, attrs)
@@ -366,6 +365,15 @@ class YTitleBar constructor(context: Context, attrs: AttributeSet? = null) : Vie
                 it.text = str
             }
         }
+    }
+
+    fun setLeftShow(show: Boolean) {
+        mLeftView?.visibility = if (show) {
+            View.VISIBLE
+        } else {
+            View.GONE
+        }
+
     }
 
     fun setLeftListener(onClickListener: OnClickListener) {
