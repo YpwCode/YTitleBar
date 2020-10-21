@@ -15,7 +15,6 @@ import com.ypw.code.util.BarUtils
 import com.ypw.code.util.ConvertUtils
 import com.ypw.code.util.getDimen
 import com.ypw.code.util.getDrawable
-import com.ypw.code.view.side.R
 import kotlin.math.max
 
 /**
