@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
 android {
     compileSdkVersion versions.compileSdkVersion
     buildToolsVersion versions.buildToolsVersion
@@ -40,6 +41,7 @@ dependencies {
     implementation depAndroidxLibs.appcompat
     implementation depAndroidxLibs.constraintlayout
 
-    implementation project(':lib')
+//    implementation project(':lib')
     implementation depMyLibs.lib_dimen
+    implementation depMyLibs.lib_titlebar
 }
